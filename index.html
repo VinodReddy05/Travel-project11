@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM TRAVEL</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <nav class="nav">
+        <div class="logo">
+            <img src="./assest/logoimg.png" alt="">
+
+        </div>
+
+
+        <div class=nav-links>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#TOUR">TOUR</a></li>
+                <li><a href="#ACTIVITIES">ACTIVITIES</a></li>
+                <li><a href="#DESTINATION">DESTINATION</a></li>
+                <li><a href="#NEW PLACE">NEW PLACE </a></li>
+                <li><a href="#CONTACT">CONTACT</a></li>
+            </ul>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="Registerbtn">
+            <button>Register</button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- login form -->
+
+    <div class="hero">
+
+        <div class="icon">
+            <i class="fa-solid fa-xmark bx-md"></i>
+        </div>
+
+        <div class="form-box" id="loginform">
+            <div class="button-box">
+                <div id="btnBG"> </div>
+                <button id="loginbtn" type="button" class="toggle-btn">Log In</button>
+                <button id="registerbtn" type="button" class="toggle-btn">Register</button>
+            </div>
+            <div class="social-icons">
+                <i class='bx bxl-facebook-circle bx-md'></i>
+                <i class='bx bxl-google bx-md'></i>
+                <i class='bx bxl-linkedin-square bx-md'></i>
+
+            </div>
+            <div class="input-area">
+                <form class="input-group" id="login">
+                    <input type="text" class="input-field" placeholder="Uesr Id" required>
+                    <input type="text" class="input-field" placeholder="Password" required>
+                    <div class="check-box2">
+                        <input type="checkbox" class="check-box">
+                        <p>Remember Password</p>
+                    </div>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+
+                <form class="input-group" id="register">
+                    <input type="fn" class="input-field" placeholder="First name" id="fn" required>
+                    <input type="Ln" class="input-field" placeholder="Last name" id="ln" required>
+                    <input type="text" class="input-field" placeholder="Email Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <div class="check-box2">
+                        <input type="checkbox" class="check-box">
+                        <p>I agree to the terms & conditions</p>
+                    </div>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!------------------ hometour---------- -->
+
+
+    <div class="hometour">
+        <p>Home > Tours > Phuket</p>
+        <p>THE 10 BEST Phuket Tours & Excursions</p>
+    </div>
+    <!----------------- hero-secton1 -------------->
+
+    <section class="hero-secton">
+
+        <div class="bestseller">
+
+            <button>Bestseller</button>
+            <button class="bestseller2">Free cancellation</button>
+
+            <h2>Phi Phi Islands Adventure Day Trip with <span></span>Seaview Lunch by V. Marine Tour</h2>
+        </div>
+        <div class="wishlist">
+            <div class="wishlist1">
+                <p>4.8 (269)</p>
+                <p>Paris, France</p>
+                <p>30K+ booked</p>
+            </div>
+
+            <div class="wishlist1">
+                <p>Share</p>
+                <p>Wishlist</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="grid_image" id="TOUR">
+            <div class="box box1 popup">
+                <img class="grid-img-1 popup-img"
+                    src="https://media.cntraveller.com/photos/611bea4969410e829d87e18b/16:9/w_2560%2Cc_limit/Formentera15_CNT_20jun12_PrestonSchlebusch_b.jpg">
+            </div>
+            <div class="box box2 popup">
+                <img class="grid-img-2 popup-img"
+                    src="https://img.freepik.com/premium-photo/4k-wallpaper_113255-183102.jpg" alt="">
+            </div>
+            <div class="box box3 popup">
+                <img class="grid-img-3 popup-img"
+                    src="https://www.pixel4k.com/wp-content/uploads/2018/11/sea-beach-sunset-4k_1541116274.jpg.webp"
+                    alt="">
+            </div>
+            <div class="box box4 popup">
+                <img class="grid-img-4 popup-img"
+                    src="https://mrwallpaper.com/images/hd/4k-beach-nature-view-s0jgy1y9poz5zg54.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- the modal part -->
+
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+    </section>
+
+    <!-- checkboxes2 -->
+
+
+    <section class="checkboxes" id="ACTIVITIES">
+
+        <div class="checkboxes1">
+            <input type="number" name="number">
+            <ul>
+                <li>Duration</li>
+                <li>3 days</li>
+            </ul>
+        </div>
+        <div class="checkboxes1">
+            <input type="number" name="number">
+            <ul>
+                <li>Group Size</li>
+                <li>10 people</li>
+            </ul>
+
+        </div>
+        <div class="checkboxes1">
+            <input type="number" name="number">
+            <ul>
+                <li>Ages</li>
+                <li>18-99 yrs</li>
+            </ul>
+
+        </div>
+        <div class="checkboxes1">
+            <input type="text" name="number">
+            <ul>
+                <li>Languages</li>
+                <li>English, Hindi</li>
+            </ul>
+        </div>
+        <div class=" checkbtn">
+            <button>Submit</button>
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- tour overview3 -->
+
+
+    <div class="tour-overview">
+        <h2>Tour Overview</h2>
+        <p>The Phi Phi archipelago is a must-visit while in Phuket, and this speedboat trip whisks you around the
+            islands in one day. <span></span>
+            Swim over the coral reefs of Pileh Lagoon, have lunch at Phi Phi Leh, snorkel at Bamboo Island, and visit
+            Monkey Beach and <span></span>
+            Maya Bay, immortalized in "The Beach." Boat transfers, snacks, buffet lunch, snorkeling equipment, and
+            Phuket hotel pickup <span></span>
+            and drop-off all included.</p>
+
+        <hr>
+        <!-- <div class="tour"> -->
+        <h4>Tour Highlights</h4>
+        <ul>
+            <li>Experience the thrill of a speedboat to the stunning Phi Phi Islands</li>
+            <li>Be amazed by the variety of marine life in the archepelago</li>
+            <li>Enjoy relaxing in paradise with white sand beaches and azure turquoise water</li>
+            <li>Feel the comfort of a tour limited to 35 passengers</li>
+            <li>Catch a glimpse of the wild monkeys around Monkey Beach</li>
+        </ul>
+        <!-- </div>    -->
+
+
+    </div>
+
+
+    <!-- info`4 -->
+
+    <section class="info">
+
+        <div class="info-1">
+            <h2>Ali Tufan</h2>
+            <h3>Take this tour! Its fantastic!</h3>
+            <p>Great for 4-5 hours to explore. Really a lot to see and tons of photo spots. Even have a passport for you
+                to collect all the
+                stamps as a souvenir. Must see for a Harry Potter fan.</p>
+            <div class="info-img">
+                <img src="./assest/infoimg1.png" alt="">
+                <img src="./assest/infoimg2.png" alt="">
+                <img src="./assest/infoimg3.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="info-1">
+            <h2>Ali Tufan</h2>
+            <h3>Take this tour! Its fantastic!</h3>
+            <p>Great for 4-5 hours to explore. Really a lot to see and tons of photo spots. Even have a passport for you
+                to collect all the
+                stamps as a souvenir. Must see for a Harry Potter fan.</p>
+            <div class="info-img">
+                <img src="./assest/infoimg1.png" alt="">
+                <img src="./assest/infoimg2.png" alt="">
+                <img src="./assest/infoimg3.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="info-1">
+            <h2>Ali Tufan</h2>
+            <h3>Take this tour! Its fantastic!</h3>
+            <p>Great for 4-5 hours to explore. Really a lot to see and tons of photo spots. Even have a passport for you
+                to collect all the
+                stamps as a souvenir. Must see for a Harry Potter fan.</p>
+            <div class="info-img">
+                <img src="./assest/infoimg1.png" alt="">
+                <img src="./assest/infoimg2.png" alt="">
+                <img src="./assest/infoimg3.png" alt="">
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- booking ticket -->
+
+
+
+
+    <!-- leave reply5 -->
+
+
+    <div class="leave">
+        <div class="leave1">
+            <h2>Leave a Reply</h2>
+            <p>*Your email address will not be published. Required fields are marked *</p>
+            <ul class="ul">
+                <li>Location</li>
+                <li>Amenities</li>
+                <li>Tour Operator</li>
+                <li>Room</li>
+                <li>Price</li>
+                <li>Food </li>
+
+            </ul>
+
+        </div>
+
+        <div class="leave2">
+            <input type="text" placeholder="Name" id="Name" required>
+            <input type="email" placeholder="Email" id="Email" required> <span></span>
+            <input type="text" placeholder="Title" id="Title" required> <span></span>
+            <input type="text" placeholder="Feedback" id="Feedback" required>
+            <button id="submit-form">Submit form</button>
+
+        </div>
+        <div id="popup" style="display: none;">
+            <p style="font-size:100px">&#9995;</p>
+            <p &#128524>Form submitted successfully</p>
+            <i class="em em-confused" aria-role="presentation" aria-label="CONFUSED FACE"></i>
+            <!-- <button id="closePopup">Close</button> -->
+        </div>
+
+    </div>
+
+
+    <!-- Itinerary6 -->
+
+    <section class="location" id="DESTINATION">
+
+        <div class="destination">
+
+            <div class="patrent">
+                <h2>Itinerary</h2>
+                <div class="child">
+                    <div class="leftside">
+                        <div class="circle  first">
+
+                        </div>
+                        <div class="dashes">
+                        </div>
+                    </div>
+                    <div class="rightside">
+                        <p>Day 1: Airport Pick Up</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="patrent">
+
+                <div class="child">
+                    <div class="leftside">
+                        <div class="circle">
+                        </div>
+                        <div class="dashes">
+                        </div>
+                    </div>
+                    <div class="rightside">
+                        <p>Day 2: Temples & River Cruise</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="patrent">
+
+                <div class="child">
+                    <div class="leftside">
+                        <div class="circle">
+                        </div>
+                        <div class="dashes">
+                        </div>
+                    </div>
+                    <div class="rightside">
+                        <p>Day 3: Massage & Overnight Train</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="patrent">
+
+                <div class="child">
+                    <div class="leftside">
+                        <div class="circle">
+                        </div>
+                        <div class="dashes">
+                        </div>
+                    </div>
+                    <div class="rightside">
+                        <p>Day 4: Khao Sok National Park</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="patrent">
+
+                <div class="child">
+                    <div class="leftside">
+                        <div class="circle">
+                        </div>
+                        <div class="dashes">
+                        </div>
+                    </div>
+                    <div class="rightside">
+                        <p>Day 5: Travel to Koh Phangan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="patrent">
+
+                <div class="child">
+                    <div class="leftside">
+                        <div class="circle">
+                        </div>
+                        <div class="dashes">
+                        </div>
+                    </div>
+                    <div class="rightside">
+                        <p>Day 6: Morning Chill & Muay Thai Lesson</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="patrent">
+
+                <div class="child">
+                    <div class="leftside">
+                        <div class="circle last">
+                        </div>
+                        <!-- <div class="dashes">
+                    </div> -->
+                    </div>
+                    <div class="rightside">
+                        <p>Day 7: Island Boat Trip </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="booking">
+            <label for="text"> Select Place</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+            <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+            </datalist>
+            <div class="ticket">
+                <label for="tentacles">Number of tickets (1-5):</label>
+                <input type="number" id="tentacles" name="tentacles" min="1" max="5" />
+            </div>
+
+            <div class="ticket">
+                <label for="date-time">Date</label>
+                <input type="date" placeholder="date" id="date" required>
+            </div>
+            <div id="myDIV" class="ticket">
+                <h2>Add tickets</h2>
+                <input type="text" id="myInput" placeholder="Title...">
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- cards7 -->
+
+    <section class="cards" id="NEW-PLACE">
+        <div class="heading">
+            <h2>You might also like...</h2>
+        </div>
+
+        <div class="card-scroll">
+            <i class='left-arrow bx bxs-chevrons-left bx-md'></i>
+            <div class="card">
+                <div class="card1">
+                    <img src="./assest/parisimg1.png" alt="">
+                    <p>Paris, France</p>
+                    <h6>Centipede Tour - Guided Arizona
+                        Desert Tour by ATV</h6>
+                    <p>4.8 (243)</p>
+
+                    <hr>
+                    <div class="card2">
+                        <p>4 days</p>
+                        <p>From $189.25</p>
+                    </div>
+                </div>
+                <!-- .................... -->
+
+                <div class="card1">
+                    <img src="./assest/newyorkimg2.png" alt="">
+                    <p>New York, USA</p>
+                    <h6>Molokini and Turtle Town
+                        Snorkeling Adventure Aboard</h6>
+                    <p>4.8 (243)</p>
+
+                    <hr>
+                    <div class="card2">
+                        <p>4 days</p>
+                        <p>From $225</p>
+
+                    </div>
+                </div>
+                <!-- ........................... -->
+
+                <div class="card1">
+                    <img src="./assest/londonimg.png" alt="">
+                    <p>London, UK</p>
+                    <h6>Westminster Walking Tour &
+                        Westminster Abbey Entry</h6>
+                    <p>4.8 (243)</p>
+                    <hr>
+                    <div class="card2">
+                        <p>4 days</p>
+                        <p>From $943</p>
+                    </div>
+                </div>
+
+
+                <!-- ................... -->
+                <div class="card1">
+                    <img src="./assest/usaimg4.png" alt="">
+                    <p>New York, USA</p>
+                    <h6>All Inclusive Ultimate Circle Island
+                        Day Tour with Lunch</h6>
+                    <p>4.8 (243)</p>
+                    <hr>
+                    <div class="card2">
+                        <p>4 days</p>
+                        <p>From $771</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card1">
+                    <img src="./assest/parisimg1.png" alt="">
+                    <p>Paris, France</p>
+                    <h6>Centipede Tour - Guided Arizona
+                        Desert Tour by ATV</h6>
+                    <p>4.8 (243)</p>
+
+                    <hr>
+                    <div class="card2">
+                        <p>4 days</p>
+                        <p>From $189.25</p>
+                    </div>
+                </div>
+                <!-- .................... -->
+
+                <div class="card1">
+                    <img src="./assest/newyorkimg2.png" alt="">
+                    <p>New York, USA</p>
+                    <h6>Molokini and Turtle Town
+                        Snorkeling Adventure Aboard</h6>
+                    <p>4.8 (243)</p>
+
+                    <hr>
+                    <div class="card2">
+                        <p>4 days</p>
+                        <p>From $225</p>
+
+                    </div>
+                </div>
+                <!-- ........................... -->
+
+                <div class="card1">
+                    <img src="./assest/londonimg.png" alt="">
+                    <p>London, UK</p>
+                    <h6>Westminster Walking Tour &
+                        Westminster Abbey Entry</h6>
+                    <p>4.8 (243)</p>
+                    <hr>
+                    <div class="card2">
+                        <p>4 days</p>
+                        <p>From $943</p>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- ................... -->
+                <div class="card1">
+                    <img src="./assest/usaimg4.png" alt="">
+                    <p>New York, USA</p>
+                    <h6>All Inclusive Ultimate Circle Island
+                        Day Tour with Lunch</h6>
+                    <p>4.8 (243)</p>
+                    <hr>
+                    <div class="card2">
+                        <p>4 days</p>
+                        <p>From $771</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <i class='right-arrow bx bxs-chevrons-right bx-md'></i>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+
+    <section class="footer">
+
+        <div class="heading">
+            <h5>Speak to our expert at <span>1-800-453-6744</span></h5>
+            <h5>Follow Us</h5>
+        </div>
+        <hr>
+
+        <div class="content">
+            <div class="content1">
+                <h5>Contact</h5>
+                <p>328 Queensberry Street, <span></span> North Melbourne VIC3051.</p>
+                <p>Australia.</p>
+                <p>hi@viatours.com</p>
+            </div>
+
+
+            <div class="content1">
+                <h5>Company</h5>
+                <p>About Us</p>
+                <p>Tourz Reviews</p>
+                <p>Contact Us</p>
+                <p>Travel Guides</p>
+                <p>Data Policy</p>
+                <p>Cookie Policy</p>
+                <p>Legal</p>
+                <p>Sitemap</p>
+            </div>
+
+
+            <div class="content1">
+                <h5>Support</h5>
+                <p>Get in Touch</p>
+                <p>Help center</p>
+                <p>Live chat</p>
+                <p>How it works</p>
+            </div>
+
+
+
+        </div>
+
+
+        <!-- <div class="foot-input">
+        <label for="email">Email</label>
+        <input type="email" placeholder="email" id="email" required>
+    </div> -->
+    </section>
+
+
+    <div class="final">
+        <div>© Copyright Viatours 2024</div>
+        <div>
+            <img src="./assest/Footer.png" alt="">
+            <img src="./assest/Footer (1).png" alt="">
+            <img src="./assest/Footer (2).png" alt="">
+            <img src="./assest/Footer (3).png" alt="">
+            <img src="./assest/Footer (4).png" alt="">
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
